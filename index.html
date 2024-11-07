@@ -57,10 +57,17 @@
     
     <script>
       const video = document.getElementById('video');
-      const scan_svg_img = document.getElementById('scanning-overlay');
 
       video.muted = true; // Garante que o vídeo esteja silenciado
       video.play(); // Tenta iniciar o vídeo automaticamente
+
+      document.addEventListener('DOMContentLoaded', function() {
+      const scan_svg_img = document.getElementById('scanning-overlay');
+      setTimeout(function() {
+        scan_svg_img.style.display = 'none';
+      }, 5000);
+
+      });
     </script>
 
         <div id="overlay"><img src="aeon_branco.svg" id="imagem"></div>
