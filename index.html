@@ -37,7 +37,7 @@
         top: 50%;              /* Posiciona a imagem no centro vertical */
         left: 50%;             /* Posiciona a imagem no centro horizontal */
         transform: translate(-50%, -50%); /* Ajusta para centralizar totalmente */
-        width:50%;
+        width:80%;
       }
     </style>
   </head>
@@ -57,8 +57,14 @@
     
     <script>
       const video = document.getElementById('video');
+      const scan_svg_img = document.getElementById('scanning-overlay');
+
       video.muted = true; // Garante que o vídeo esteja silenciado
       video.play(); // Tenta iniciar o vídeo automaticamente
+
+      video.addEventListener('play', function() {
+        image.style.display = 'none';
+      });
     </script>
 
     <div id="overlay"><img src="aeon_branco.svg" id="imagem"></div>
