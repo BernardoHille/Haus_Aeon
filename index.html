@@ -4,18 +4,6 @@
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
     <style>
-      #scanning-overlay {
-        position: fixed; /* Sit on top of the page content */
-        display: block; /* Hidden by default */
-        width: 100%; /* Full width (cover the whole page) */
-        height: 100%; /* Full height (cover the whole page) */
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-        cursor: pointer; /* Add a pointer on hover */
-      } 
       #overlay {
         position: fixed; /* Sit on top of the page content */
         display: block; /* Hidden by default */
@@ -45,11 +33,11 @@
         transform: translateX(-50%); /* Ajusta para centralizar totalmente */
       }
       #scan_svg{
-        position: fixed;
-        top: 50%;
-        left: 50%;
+        position: fixed;       /* Fixa a imagem na tela */
+        top: 50%;              /* Posiciona a imagem no centro vertical */
+        left: 50%;             /* Posiciona a imagem no centro horizontal */
+        transform: translate(-50%, -50%); /* Ajusta para centralizar totalmente */
         width:50%;
-        color:red;
       }
     </style>
   </head>
