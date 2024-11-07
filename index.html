@@ -24,11 +24,15 @@
         color: white;
         transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
-}
+      }
+      #imagem{
+        width: 50%;
+        height: auto;
+      }
     </style>
   </head>
   <body>
-    <div id="overlay"><img src="aeon_branco.svg" size="40"></div>
+    <div id="overlay"><img src="aeon_branco.svg" id="imagem"></div>
     <a-scene mindar-image="imageTargetSrc: targets1_1.mind; filterMinCF:0.001; filterBeta: 0.001; warmupTolerance: 5; missTolerance: 5;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
         <video id="video" src="rickroll.mp4" autoplay loop muted crossorigin="anonymous" playsinline></video>
