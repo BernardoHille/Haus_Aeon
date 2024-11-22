@@ -205,7 +205,12 @@
 
 		@media screen and (orientation: landscape) {
 			#acessar_site{
-				display: none;
+				position: fixed;       /* Deixa a imagem fixa na tela */
+		  		width: 80%;            /* Tamanho da imagem */
+		  		bottom: 50%;           /* Alinha a imagem na parte inferior */
+		  		right: 25%;             /* Centraliza horizontalmente */
+		  		z-index: 1000;
+		  		max-width: 200px;
 			}
 
 			#logo {
